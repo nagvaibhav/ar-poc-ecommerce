@@ -35,27 +35,7 @@ const RecommendedItems = () => {
           "https://cdn.dummyjson.com/product-images/26/5.jpg",
           "https://cdn.dummyjson.com/product-images/26/thumbnail.jpg",
         ],
-        showdiscountBadge: true,
-      },
-      {
-        id: 27,
-        title: "Chair Motion Lounger",
-        description:
-          "Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm",
-        price: 51,
-        discountPercentage: 15.58,
-        rating: 4.41,
-        stock: 17,
-        brand: "Flying Wooden",
-        category: "home-decoration",
-        thumbnail: "https://cdn.dummyjson.com/product-images/27/thumbnail.webp",
-        images: [
-          "images/ArmChair_Mat01.png",
-          "https://cdn.dummyjson.com/product-images/27/2.jpg",
-          "https://cdn.dummyjson.com/product-images/27/3.jpg",
-          "https://cdn.dummyjson.com/product-images/27/4.jpg",
-          "https://cdn.dummyjson.com/product-images/27/thumbnail.webp",
-        ],
+        showdiscountBadge: false,
       },
       {
         id: 28,
@@ -134,7 +114,7 @@ const RecommendedItems = () => {
           "https://cdn.dummyjson.com/product-images/30/3.jpg",
           "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg",
         ],
-        showdiscountBadge: true,
+        showdiscountBadge: false,
       },
     ],
   };
