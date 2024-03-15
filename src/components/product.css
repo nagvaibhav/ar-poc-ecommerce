@@ -1,0 +1,50 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 7px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  height: 400px; /* Set a fixed height for the card */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire card */
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #765bb5;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: all 0.3s ease; /* Add transition for hover effect */
+}
+
+.card button:hover {
+  background-color: #563d7c; /* Darken the background color on hover */
+  transform: translateY(-3px); /* Add a slight lift effect */
+}
+
+.price {
+  color: #666; /* Change the color of the price text */
+  font-size: 22px;
+  margin-bottom: 10px; /* Add some space below the price */
+}
+
+h4 {
+  color: #333; /* Change the color of the title */
+  font-size: 24px;
+  margin-top: 10px; /* Add some space above the title */
+}
+
+.product-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
