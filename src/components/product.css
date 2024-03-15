@@ -18,7 +18,7 @@
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #765bb5;
+  background-color: #6c757d;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -27,7 +27,7 @@
 }
 
 .card button:hover {
-  background-color: #563d7c; /* Darken the background color on hover */
+  background-color: #6c757d; /* Darken the background color on hover */
   transform: translateY(-3px); /* Add a slight lift effect */
 }
 
