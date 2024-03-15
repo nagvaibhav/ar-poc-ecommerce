@@ -27,7 +27,7 @@
 .slider-item img {
   display: block;
   width: 100%;
-  height: 220px; /* Set image height to cover entire container */
+  height: 240px; /* Set image height to cover entire container */
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
