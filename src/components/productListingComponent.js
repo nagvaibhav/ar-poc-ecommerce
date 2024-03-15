@@ -23,7 +23,13 @@ function ProductListingContainer() {
     <>
       <h1
         className="page-title"
-        style={{ fontFamily: "Libre Baskerville, serif" }}
+        style={{
+          fontFamily: "Libre Baskerville, serif",
+          backgroundColor: "lightslategray",
+          padding: "20px",
+          margin: "-20px",
+          fontWeight: "700",
+        }}
       >
         Product Listing Page
       </h1>

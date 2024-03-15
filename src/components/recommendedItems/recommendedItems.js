@@ -35,6 +35,7 @@ const RecommendedItems = () => {
           "https://cdn.dummyjson.com/product-images/26/5.jpg",
           "https://cdn.dummyjson.com/product-images/26/thumbnail.jpg",
         ],
+        showdiscountBadge: true,
       },
       {
         id: 27,
@@ -133,6 +134,7 @@ const RecommendedItems = () => {
           "https://cdn.dummyjson.com/product-images/30/3.jpg",
           "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg",
         ],
+        showdiscountBadge: true,
       },
     ],
   };
@@ -194,7 +196,7 @@ const RecommendedItems = () => {
   };
 
   return (
-    <div className="recommended-container">
+    <div className="recommended-container" style={{ marginTop: "30px" }}>
       <div className="slider-heading">
         <h3>Frequently Bought Together</h3>
       </div>
@@ -215,44 +217,35 @@ const RecommendedItems = () => {
                   checked={checkedState[imageItemIndex]}
                   onChange={() => handleImageClick(imageItemIndex)}
                 />
+                {imageItem.showdiscountBadge && (
+                  <div className="discount-badge" data-component="dui-badge">
+                    <div
+                      style={{
+                        backgroundColor: "#CC0C39",
+                        color: "#ffffff",
+                      }}
+                      className="discount-off-label"
+                    >
+                      <span className="a-size-mini">28</span>
+                      <span className="a-size-mini">% off</span>
+                    </div>
+                    <div
+                      style={{
+                        color: "#CC0C39",
+                      }}
+                      className="discount-text-deal"
+                    >
+                      <span className="a-size-mini">Limited time deal</span>
+                    </div>
+                  </div>
+                )}
+                <div className="product-title">{imageItem?.title}</div>
+                <CurrencyFormatter amount={imageItem?.price} />
                 <Image
                   src={imageItem?.images?.[0]}
                   className="w-100"
                   onClick={() => setModalContent(imageItem)}
                 />
-                <div>
-                  <div>
-                    <div>
-                      <div
-                        className="discount-badge"
-                        data-component="dui-badge"
-                      >
-                        <div
-                          style={{
-                            backgroundColor: "#CC0C39",
-                            color: "#ffffff",
-                          }}
-                          className="discount-off-label"
-                        >
-                          <span className="a-size-mini">28</span>
-                          <span className="a-size-mini">% off</span>
-                        </div>
-                        <div
-                          style={{
-                            color: "#CC0C39",
-                          }}
-                          className="discount-text-deal"
-                        >
-                          <span className="a-size-mini">Limited time deal</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="product-title">{imageItem?.title}</div>
-                  <div className="product-price">
-                    <CurrencyFormatter amount={imageItem?.price} />
-                  </div>
-                </div>
                 <ProductDetailsModal
                   show={modalShow}
                   onHide={() => setModalShow(false)}
